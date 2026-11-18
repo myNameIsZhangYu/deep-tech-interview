@@ -34,16 +34,17 @@ checks. Stop then; do not keep expanding scope.
 
 ## 0. Self-assessment
 
-Before learning, ask:
+Infer the learner's current level from conversation, existing notes, repositories,
+and prior artifacts instead of requiring a questionnaire. State the assumption
+explicitly. If the level is unknown, start at B-level:
 
 ```text
-What do I currently know about this topic?
-Can I explain its positioning in one sentence?
-Can I name one production problem?
-Can I compare one alternative?
+Assumed level: B.
+Evidence: available context or the absence of prior artifacts.
 ```
 
-Purpose: identify the starting level and avoid relearning known material.
+Purpose: identify the starting level and avoid relearning known material without
+making the first interaction unfriendly.
 
 ## 1. Scope
 
@@ -61,6 +62,22 @@ learning.
 Out-of-scope findings go into an "outside boundary" list. Do not chase them.
 
 ## 2. Question map and scorecard
+
+Start with defaults immediately. The first response should contain a default
+scope, a question map, and a plan, then one confirmation:
+
+```text
+Reply `continue` to execute this plan, or correct any default.
+```
+
+Do not open with multiple question groups. The initial map must contain at most
+eight questions, distributed approximately as:
+
+- Concept/principle: 2-3 questions.
+- Design tradeoff: 2-3 questions.
+- Production problem: 2-3 questions.
+
+Do not list C-level questions unless the learner asks for broader coverage.
 
 Build questions from real interview follow-ups and production scenarios, not
 from a tutorial table of contents.
@@ -93,6 +110,10 @@ Score each question from 0 to 5:
 | 5 | Can explain validation evidence |
 
 Learning target: A/B-level questions reach score 4 or higher.
+
+The instructor maintains the scorecard based on learner output, follow-up answers,
+and validation evidence. Do not require the learner to score every question before
+starting; show a consolidated scorecard after pressure testing or validation.
 
 ## 3. Question-driven absorption and cross-validation
 
@@ -264,3 +285,15 @@ A topic is complete only when all are true:
 | Study everything broadly but shallowly | Deep-dive within scope; label the rest outside boundary |
 | Keep learning because it feels productive | Follow the scorecard exit rule |
 | Repeat a confidently wrong explanation | Maintain and resolve the misconception list |
+
+## Light Mode
+
+Use when the learner asks for a quick pass, an overview, or explicitly asks you
+not to ask questions:
+
+1. Infer scope and depth boundary.
+2. Produce a six-question map focused on A/B-level concepts.
+3. Produce an interview-ready summary: positioning, why needed, core mechanism,
+   production pitfalls, and one comparison tradeoff.
+4. List suggested validation experiments, but do not run them.
+5. Do not run pressure testing unless requested.
